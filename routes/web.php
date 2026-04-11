@@ -11,11 +11,21 @@ Route::get('/', function () {
 Route::middleware('guest')->group(function () {
     Route::get('/register', [AuthController::class, 'showRegister']);
     Route::post('/register', [AuthController::class, 'register']);
+
+    Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+    Route::post('/login', [AuthController::class, 'login']);
+
 });
 
 Route::get('/entries', [EntryController::class, 'index']);
 
 Route::middleware('auth')->group(function () {
+
+    Route::post('/logout', [AuthController::class, 'logout']);
+
+
+
+    Route::get('/entries', [EntryController::class, 'index']);
     Route::get('/entries/create', [EntryController::class, 'create']);
     Route::post('/entries', [EntryController::class, 'store']);
     Route::get('/entries/{entry}', [EntryController::class, 'show']);
