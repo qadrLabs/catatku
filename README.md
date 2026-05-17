@@ -77,4 +77,4 @@ This project is part of the **Learn Laravel for Beginners** course. For more det
 [https://qadrlabs.com/course/learn-laravel-for-beginners](https://qadrlabs.com/course/learn-laravel-for-beginners)
 
 ## License
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Catatku is a free and open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
