@@ -13,7 +13,6 @@ Before setting up the project locally, ensure you have the following installed:
 - **PHP 8.3** or higher
 - **Composer**
 - **MySQL**
-- **Node.js & NPM**
 
 ## Local Setup Instructions
 
@@ -28,7 +27,6 @@ cd catatku
 ### 2. Install Dependencies
 ```bash
 composer install
-npm install
 ```
 
 ### 3. Environment Configuration
@@ -58,12 +56,7 @@ Make sure your MySQL server is running and the database specified in `.env` exis
 php artisan migrate
 ```
 
-### 6. Build Assets
-```bash
-npm run build
-```
-
-### 7. Start the Development Server
+### 6. Start the Development Server
 ```bash
 php artisan serve
 ```
